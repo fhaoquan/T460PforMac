@@ -1,0 +1,68 @@
+
+Clover EFI installer log - Wed May 18 11:30:57 CST 2016
+Installer version: v2.3k r3510 EFI bootloader
+======================================================
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *160.0 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS H_OS X Y 10.10.5        8.5 GB     disk0s2
+   3:                  Apple_HFS H_OS X El 10.11.4       8.5 GB     disk0s3
+   4:                  Apple_HFS OS X Y 10.10.5          79.5 GB    disk0s4
+   5:                 Apple_Boot Recovery HD             650.0 MB   disk0s5
+   6:                  Apple_HFS OS X El 10.11.5         61.8 GB    disk0s6
+   7:                 Apple_Boot Recovery HD             650.0 MB   disk0s7
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *2.0 TB     disk1
+   1:               Windows_NTFS WIN 7                   161.1 GB   disk1s1
+   2:               Windows_NTFS WIN 10                  161.1 GB   disk1s2
+   3:               Windows_NTFS SOFWARE                 429.5 GB   disk1s5
+   4:               Windows_NTFS IMAGE                   1.2 TB     disk1s6
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *7.2 GB     disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                  Apple_HFS OS X Install ESD        6.9 GB     disk2s2
+/dev/disk3
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *2.1 GB     disk3
+   1:                  Apple_HFS OS X Base System        2.0 GB     disk3s1
+/dev/disk4
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *8.0 GB     disk4
+   1:                        EFI EFI                     209.7 MB   disk4s1
+   2:                  Apple_HFS USB_OS X El 10.11.5 dmg 7.7 GB     disk4s2
+/dev/disk5
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     Apple_partition_scheme                        *18.1 MB    disk5
+   1:        Apple_partition_map                         32.3 KB    disk5s1
+   2:                  Apple_HFS Flash Player            18.1 MB    disk5s2
+======================================================
+Backing up EFI files
+
+No Active Partition
+
+Stage 0 - Writting boot0af to /dev/disk4
+/Volumes/USB_OS X El 10.11.5 dmg/usr/local/bin/fdisk440 -u -f /Volumes/USB_OS X El 10.11.5 dmg/usr/standalone/i386/boot0af -y /dev/disk4
+
+Stage 1 - Writting boot1f32 to /dev/rdisk4s1
+dd if=/dev/rdisk4s1 count=1 bs=512 of=/tmp/origbs
+boot volume format is FAT32
+cp /tmp/boot1f32 /tmp/newbs
+dd if=/tmp/origbs of=/tmp/newbs skip=3 seek=3 bs=1 count=87 conv=notrunc
+dd if=/tmp/newbs of=/dev/rdisk4s1
+
+Stage 2 - Written boot6 (x64) to /Volumes/EFI/boot
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/Volumes/USB_OS X El 10.11.5 dmg'
+
+Activating /Volumes/USB_OS X El 10.11.5 dmg/etc/rc.boot.d/70.disable_sleep_proxy_client.local rc script
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
