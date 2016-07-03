@@ -214,7 +214,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>El Capitan</string>
+		<string>applestyle</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
