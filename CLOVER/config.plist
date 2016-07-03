@@ -12,6 +12,8 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF_1000000</key>
+				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
 			</dict>
@@ -47,20 +49,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change EHC2 to EH02</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<false/>
@@ -75,30 +63,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HECI to IMEI</string>
+					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SEVDSQ==
+					RUhDMg==
 					</data>
 					<key>Replace</key>
 					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TUVJXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
+					RUgwMg==
 					</data>
 				</dict>
 			</array>
@@ -110,10 +84,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>MCFG</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -127,56 +97,27 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>APIC.aml</string>
-			<string>ASF!.aml</string>
-			<string>BATB.aml</string>
-			<string>BOOT.aml</string>
-			<string>DBG2.aml</string>
-			<string>DBGP.aml</string>
-			<string>DSDT-80000000.aml</string>
-			<string>DSDT.aml</string>
-			<string>ECDT.aml</string>
-			<string>FACP.aml</string>
-			<string>FACS.aml</string>
-			<string>FPDT.aml</string>
-			<string>HPET.aml</string>
-			<string>MCFG.aml</string>
-			<string>MSDM.aml</string>
-			<string>RSDP.aml</string>
-			<string>RSDT-DSDT.aml</string>
-			<string>RSDT-ECDT.aml</string>
-			<string>RSDT-FACP.aml</string>
-			<string>RSDT-FACS.aml</string>
-			<string><string>RSDT-HPET.aml</string>
-			<string>RSDT-SSDT-0.aml</string>
-			<string>RSDT-SSDT-1.aml</string>
-			<string>RSDT-SSDT-2.aml</string>
-			<string>RSDT-SSDT-3.aml</string>
-			<string>RSDT-TCPA.aml</string>
-			<string>RSDT-TPM2.aml</string>
-			<string>RSDT-UEFI.aml</string>
-			<string>RSDT.aml</string>
+			<string>SSDT.aml</string>
 			<string>SSDT-0.aml</string>
 			<string>SSDT-1.aml</string>
-			<string>SSDT-10x.aml</string>
-			<string>SSDT-11x.aml</string>
-			<string>SSDT-12x.aml</string>
-			<string>SSDT-13x.aml</string>
-			<string>SSDT-14.aml</string>
-			<string>SSDT-15.aml</string>
-			<string>SSDT-16.aml</string>
 			<string>SSDT-2.aml</string>
 			<string>SSDT-3.aml</string>
 			<string>SSDT-4.aml</string>
 			<string>SSDT-5.aml</string>
 			<string>SSDT-6.aml</string>
-			<string>SSDT-7x.aml</string>
-			<string>SSDT-8x.aml</string>
-			<string>SSDT-9x.aml</string>
-			<string>TCPA.aml</string>
-			<string>TPM2.aml</string>
-			<string>UEFI.aml</string>
-			<string>XSDT.aml</string>
+			<string>SSDT-7.aml</string>
+			<string>SSDT-8.aml</string>
+			<string>SSDT-9.aml</string>
+			<string>SSDT-10.aml</string>
+			<string>SSDT-11.aml</string>
+			<string>SSDT-12.aml</string>
+			<string>SSDT-13.aml</string>
+			<string>SSDT-14.aml</string>
+			<string>SSDT-15.aml</string>
+			<string>SSDT-16.aml</string>
+			<string>SSDT-17.aml</string>
+			<string>SSDT-18.aml</string>
+			<string>SSDT-19.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -331,25 +272,25 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AppleGraphicsDevicePolicy (board-id) Patch</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				Ym9hcmQtaWQ=
+				AEFQUExFIFNTRAA=
 				</data>
 				<key>Name</key>
-				<string>AppleGraphicsDevicePolicy</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				Ym9hcmQtaXg=
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQAAdRc=
@@ -363,18 +304,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 ( (based on Austere.J patch)</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
-				AEFQUExFIFNTRAA=
+				QTnEdio=
 				</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAAA=
+				QTnE6yo=
 				</data>
 			</dict>
 		</array>
@@ -459,9 +400,9 @@
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02QXXXXGG7L</string>
+		<string>C02Q1019GG7L</string>
 		<key>Trust</key>
-		<true/>
+		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
