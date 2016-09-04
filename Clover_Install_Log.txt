@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Sun Jul  3 11:55:03 CST 2016
-Installer version: v2.3k r3556 EFI bootloader
+Clover EFI installer log - Sun Jul 31 12:46:50 CST 2016
+Installer version: v2.3k r3650 EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -16,8 +16,8 @@ Installer version: v2.3k r3556 EFI bootloader
 ======================================================
 Backing up EFI files
 
-Backing up stage2 file /Volumes/Mac/EFIROOTDIR/boot  to /Volumes/Mac/EFI-Backups/r3556/2016-07-03-11h55/boot
-Backing up /Volumes/Mac/EFIROOTDIR/EFI folder to /Volumes/Mac/EFI-Backups/r3556/2016-07-03-11h55/EFI
+Backing up stage2 file /Volumes/Mac/EFIROOTDIR/boot  to /Volumes/Mac/EFI-Backups/r3556/2016-07-31-12h46/boot
+Backing up /Volumes/Mac/EFIROOTDIR/EFI folder to /Volumes/Mac/EFI-Backups/r3556/2016-07-31-12h46/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
