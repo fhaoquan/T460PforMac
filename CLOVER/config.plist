@@ -139,6 +139,8 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
+		<key>C2</key>
+		<true/>
 		<key>C4</key>
 		<true/>
 		<key>C6</key>
@@ -186,8 +188,8 @@
 		</dict>
 		<key>Hide</key>
 		<array>
-			<string>\EFI\BOOT\BOOTX64.EFI</string>
 			<string>Windows</string>
+			<string>\EFI\BOOT\BOOTX64.EFI</string>
 		</array>
 		<key>Mouse</key>
 		<dict>
@@ -272,22 +274,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>HDMI</string>
 				<key>Disabled</key>
 				<false/>
@@ -316,6 +302,22 @@
 				<key>Replace</key>
 				<data>
 				AQAA6xc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
@@ -351,9 +353,7 @@
 		<string>MacBook Pro</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-				<key>Memory</key>
+		<key>Memory</key>
 		<dict>
 			<key>Channels</key>
 			<integer>2</integer>
@@ -395,6 +395,8 @@
 			<key>SlotCount</key>
 			<integer>2</integer>
 		</dict>
+		<key>Mobile</key>
+		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro11,2</string>
 		<key>SerialNumber</key>
