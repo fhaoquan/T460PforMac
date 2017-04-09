@@ -23,13 +23,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
+					<data>SEVDSQ==</data>
 					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
+					<data>SU1FSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -37,13 +33,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					TUVJXw==
-					</data>
+					<data>TUVJXw==</data>
 					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
+					<data>SU1FSQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -51,13 +43,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
+					<data>RUhDMQ==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
+					<data>RUgwMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -65,13 +53,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
+					<data>RUhDMg==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
+					<data>RUgwMg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -79,13 +63,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
+					<data>SERBUw==</data>
 					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
+					<data>SERFRg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -93,13 +73,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
+					<data>X09TSQ==</data>
 					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
+					<data>WE9TSQ==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -191,9 +167,7 @@
 				<key>Key</key>
 				<string>AAPL,GfxYTile</string>
 				<key>Value</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 			</dict>
 		</array>
 		<key>FakeID</key>
@@ -302,82 +276,148 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 ( (based on Austere.J patch)</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QTnEdio=
-				</data>
+				<true/>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>Replace</key>
-				<data>
-				QTnE6yo=
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Boot graphics glitch, 10.10.2/10.10.3</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
+				<key>Find</key>
+				<data>QYjE6xE=</data>
+				<key>Replace</key>
+				<data>QYjE6zE=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.10.x/10.11.x (credit lisai9093, cecekpawon)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>
-				AQAAdRc=
-				</data>
+				<data>AQAAdRc=</data>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
-				<data>
-				AQAA6xc=
-				</data>
+				<data>AQAA6xc=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI</string>
+				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.9.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>9oDUAAAAgHU6</data>
+				<key>Replace</key>
+				<data>9oDUAAAAgOs6</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>9oDUAAAAgHU0</data>
+				<key>Replace</key>
+				<data>9oDUAAAAgOs0</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable XHCI 1.0 check, 10.9.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>Zj0AAQ==</data>
+				<key>Replace</key>
+				<data>Zj0AAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable XHCI 1.0 check, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>QbzHAgDgPQABAAA=</data>
+				<key>Replace</key>
+				<data>QbzHAgDgPQAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patch MSI or pin interrupts #1, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>QcdHCAAAQAA=</data>
+				<key>Replace</key>
+				<data>QcdHCAAAAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patch MSI or pin interrupts #2, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>gUkIAABAAA==</data>
+				<key>Replace</key>
+				<data>gUkIAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable the sleep code leaving the controller in non-working state after wake, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>xoDIAAAAAQ==</data>
+				<key>Replace</key>
+				<data>xoDIAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable PCI power management if there is no such code in DSDT, 10.9.*, 10.10.* (credit Zenith432)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleUSBXHCI</string>
+				<key>Find</key>
+				<data>dU1Ii7voAQAA</data>
+				<key>Replace</key>
+				<data>601Ii7voAQAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change %04x to xxxx for AppleBacklightInjector.kext (credit RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAQAAAgQKAAAEAACHAQAA
-				</data>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleBacklight</string>
+				<key>Find</key>
+				<data>JTA0eA==</data>
 				<key>Replace</key>
-				<data>
-				AQUJAAQAAACHAQAAAgQKAAAIAACHAQAA
-				</data>
+				<data>eHh4eA==</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Intel HD 530 - Port 7 as HDMI</string>
-				<key>Find</key>
-				<data>
-				/wAAAAEAAAAgAAAA
-				</data>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AwYKAAAIAACHAQAA
-				</data>
-				</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 ( (based on Austere.J patch)</string>
@@ -454,7 +494,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>05/24/13</string>
+		<string>05/24/16</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
@@ -520,7 +560,7 @@
 		<key>Mobile</key>
 		<true/>
 		<key>ProductName</key>
-		<string>MacBookPro11,2</string>
+		<string>MacBookPro13,2</string>
 		<key>SerialNumber</key>
 		<string>C02LV67QFD56</string>
 		<key>Trust</key>
