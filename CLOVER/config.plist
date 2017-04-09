@@ -183,6 +183,24 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>AddProperties</key>
+		<array>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Key</key>
+				<string>AAPL,GfxYTile</string>
+				<key>Value</key>
+				<data>
+				AQAAAA==
+				</data>
+			</dict>
+		</array>
+		<key>FakeID</key>
+		<dict>
+			<key>IntelGFX</key>
+			<string>0x1234567</string>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -242,7 +260,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Bluemac</string>
+		<string>applestyle</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -346,6 +364,84 @@
 				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Intel HD 530 - Port 7 as HDMI</string>
+				<key>Find</key>
+				<data>
+				/wAAAAEAAAAgAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AwYKAAAIAACHAQAA
+				</data>
+				</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 ( (based on Austere.J patch)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>QTnEdio=</data>
+				<key>Replace</key>
+				<data>QTnE6yo=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 ( (based on Austere.J patch)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>iUXIOcZ2UQ==</data>
+				<key>Replace</key>
+				<data>iUXIOcbrUQ==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>AAAIAAIAAACYAAAAAQUJAAAEAAA=</data>
+				<key>Replace</key>
+				<data>AAAIAAAEAACYAAAAAQUJAAAEAAA=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>ChMDAAAABgAAAAAAAAAAAA==</data>
+				<key>Replace</key>
+				<data>DxMDAAAABgAAAAAAAAAAAA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>CgsDAAAHBgADAAAABAAAAA==</data>
+				<key>Replace</key>
+				<data>DwsDAAAHBgADAAAABAAAAA==</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -361,6 +457,8 @@
 		<string>05/24/13</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP112.88Z.0138.B02.1310181745</string>
 		<key>Board-ID</key>
 		<string>Mac-7DF21CB3ED6977E5</string>
 		<key>BoardManufacturer</key>
@@ -374,61 +472,51 @@
 		<key>ChassisType</key>
 		<string>10</string>
 		<key>Family</key>
-		<string>MacBook-Aluminum</string>
+		<string>MacBook Pro</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
- 		<key>Memory</key>
- 		<dict>
+		<key>Memory</key>
+		<dict>
 			<key>Channels</key>
 			<integer>2</integer>
- 			<key>Modules</key>
- 			<array>
- 				<dict>
- 					<key>Frequency</key>
- 					<string>2133</string>
- 					<key>Part</key>
+			<key>Modules</key>
+			<array>
+				<dict>
+					<key>Frequency</key>
+					<string>2133</string>
+					<key>Part</key>
 					<string>KHX2133C13S4/16G</string>
-					<string>M471A1G43DB1</string>
- 					<key>Serial</key>
+					<key>Serial</key>
 					<string>6D338C50</string>
-					<string>15D7B84F</string>
- 					<key>Size</key>
+					<key>Size</key>
 					<string>16384</string>
-					<string>8192</string>
- 					<key>Slot</key>
+					<key>Slot</key>
 					<string>3</string>
-					<string>1</string>
- 					<key>Type</key>
- 					<string>DDR4</string>
- 					<key>Vendor</key>
+					<key>Type</key>
+					<string>DDR4</string>
+					<key>Vendor</key>
 					<string>Kingston</string>
-					<string>SAMSUNG</string>
- 				</dict>
- 				<dict>
- 					<key>Frequency</key>
- 					<string>2133</string>
- 					<key>Part</key>
+				</dict>
+				<dict>
+					<key>Frequency</key>
+					<string>2133</string>
+					<key>Part</key>
 					<string>KHX2133C13S4/16G</string>
-					<string>M471A1G43DB0</string>
- 					<key>Serial</key>
+					<key>Serial</key>
 					<string>6C338C51</string>
-					<string>15D7B874</string>
- 					<key>Size</key>
+					<key>Size</key>
 					<string>16384</string>
-					<string>8192</string>
- 					<key>Slot</key>
+					<key>Slot</key>
 					<string>1</string>
-					<string>0</string>
- 					<key>Type</key>
- 					<string>DDR4</string>
- 					<key>Vendor</key>
+					<key>Type</key>
+					<string>DDR4</string>
+					<key>Vendor</key>
 					<string>Kingston</string>
-					<string>SAMSUNG</string>
- 				</dict>
- 			</array>
+				</dict>
+			</array>
 			<key>SlotCount</key>
 			<integer>2</integer>
- 		</dict>
+		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>ProductName</key>
