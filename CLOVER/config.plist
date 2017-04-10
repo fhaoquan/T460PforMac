@@ -23,9 +23,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SEVDSQ==</data>
+					<data>
+					SEVDSQ==
+					</data>
 					<key>Replace</key>
-					<data>SU1FSQ==</data>
+					<data>
+					SU1FSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -33,9 +37,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>TUVJXw==</data>
+					<data>
+					TUVJXw==
+					</data>
 					<key>Replace</key>
-					<data>SU1FSQ==</data>
+					<data>
+					SU1FSQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -43,9 +51,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUhDMQ==</data>
+					<data>
+					RUhDMQ==
+					</data>
 					<key>Replace</key>
-					<data>RUgwMQ==</data>
+					<data>
+					RUgwMQ==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -53,9 +65,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>RUhDMg==</data>
+					<data>
+					RUhDMg==
+					</data>
 					<key>Replace</key>
-					<data>RUgwMg==</data>
+					<data>
+					RUgwMg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -63,9 +79,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SERBUw==</data>
+					<data>
+					SERBUw==
+					</data>
 					<key>Replace</key>
-					<data>SERFRg==</data>
+					<data>
+					SERFRg==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -73,9 +93,13 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>X09TSQ==</data>
+					<data>
+					X09TSQ==
+					</data>
 					<key>Replace</key>
-					<data>WE9TSQ==</data>
+					<data>
+					WE9TSQ==
+					</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -132,9 +156,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1 -v</string>
+		<string>-v dart=0 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
+		<key>DefaultVolume</key>
+		<string>Mac</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
 		<key>Secure</key>
@@ -143,16 +169,12 @@
 		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
-		<key>DefaultVolume</key>
-		<string>Mac</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>C2</key>
 		<true/>
 		<key>C4</key>
-		<true/>
-		<key>C6</key>
 		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
@@ -164,10 +186,14 @@
 			<dict>
 				<key>Device</key>
 				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Key</key>
 				<string>AAPL,GfxYTile</string>
 				<key>Value</key>
-				<data>AQAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 			</dict>
 		</array>
 		<key>FakeID</key>
@@ -260,6 +286,8 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
+		<key>DellSMBIOSPatch</key>
+		<false/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
@@ -279,24 +307,32 @@
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
 				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.10.2/10.10.3</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				QYjE6xE=
+				</data>
 				<key>Name</key>
 				<string>com.apple.iokit.IOGraphicsFamily</string>
-				<key>Find</key>
-				<data>QYjE6xE=</data>
 				<key>Replace</key>
-				<data>QYjE6zE=</data>
+				<data>
+				QYjE6zE=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -304,183 +340,243 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>AQAAdRc=</data>
+				<data>
+				AQAAdRc=
+				</data>
 				<key>Name</key>
 				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
-				<data>AQAA6xc=</data>
+				<data>
+				AQAA6xc=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.9.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				9oDUAAAAgHU6
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>9oDUAAAAgHU6</data>
 				<key>Replace</key>
-				<data>9oDUAAAAgOs6</data>
+				<data>
+				9oDUAAAAgOs6
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable Intel, Fresco Logic USB3.0 controllers check, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				9oDUAAAAgHU0
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>9oDUAAAAgHU0</data>
 				<key>Replace</key>
-				<data>9oDUAAAAgOs0</data>
+				<data>
+				9oDUAAAAgOs0
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable XHCI 1.0 check, 10.9.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				Zj0AAQ==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>Zj0AAQ==</data>
 				<key>Replace</key>
-				<data>Zj0AAA==</data>
+				<data>
+				Zj0AAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable XHCI 1.0 check, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				QbzHAgDgPQABAAA=
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>QbzHAgDgPQABAAA=</data>
 				<key>Replace</key>
-				<data>QbzHAgDgPQAAAAA=</data>
+				<data>
+				QbzHAgDgPQAAAAA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Patch MSI or pin interrupts #1, 10.9.*, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				QcdHCAAAQAA=
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>QcdHCAAAQAA=</data>
 				<key>Replace</key>
-				<data>QcdHCAAAAAA=</data>
+				<data>
+				QcdHCAAAAAA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Patch MSI or pin interrupts #2, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				gUkIAABAAA==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>gUkIAABAAA==</data>
 				<key>Replace</key>
-				<data>gUkIAAAAAA==</data>
+				<data>
+				gUkIAAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable the sleep code leaving the controller in non-working state after wake, 10.9.*, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				xoDIAAAAAQ==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>xoDIAAAAAQ==</data>
 				<key>Replace</key>
-				<data>xoDIAAAAAA==</data>
+				<data>
+				xoDIAAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Enable PCI power management if there is no such code in DSDT, 10.9.*, 10.10.* (credit Zenith432)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				dU1Ii7voAQAA
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleUSBXHCI</string>
-				<key>Find</key>
-				<data>dU1Ii7voAQAA</data>
 				<key>Replace</key>
-				<data>601Ii7voAQAA</data>
+				<data>
+				601Ii7voAQAA
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>change %04x to xxxx for AppleBacklightInjector.kext (credit RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
+				<key>Find</key>
+				<data>
+				JTA0eA==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleBacklight</string>
-				<key>Find</key>
-				<data>JTA0eA==</data>
 				<key>Replace</key>
-				<data>eHh4eA==</data>
+				<data>
+				eHh4eA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.4 ( (based on Austere.J patch)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				QTnEdio=
+				</data>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>QTnEdio=</data>
 				<key>Replace</key>
-				<data>QTnE6yo=</data>
+				<data>
+				QTnE6yo=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 ( (based on Austere.J patch)</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				iUXIOcZ2UQ==
+				</data>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>iUXIOcZ2UQ==</data>
 				<key>Replace</key>
-				<data>iUXIOcbrUQ==</data>
+				<data>
+				iUXIOcbrUQ==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>eDP, port 0000, 0x191e0000, 0x19160000, 0x19260000, 0x19270000, 0x191b0000, 0x19160002, 0x19260002, 0x191e0003, 0x19260004, 0x19270004, 0x193b0005 credit syscl</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYAAAAAQUJAAAEAAA=
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>AAAIAAIAAACYAAAAAQUJAAAEAAA=</data>
 				<key>Replace</key>
-				<data>AAAIAAAEAACYAAAAAQUJAAAEAAA=</data>
+				<data>
+				AAAIAAAEAACYAAAAAQUJAAAEAAA=
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				ChMDAAAABgAAAAAAAAAAAA==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>ChMDAAAABgAAAAAAAAAAAA==</data>
 				<key>Replace</key>
-				<data>DxMDAAAABgAAAAAAAAAAAA==</data>
+				<data>
+				DxMDAAAABgAAAAAAAAAAAA==
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				CgsDAAAHBgADAAAABAAAAA==
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Find</key>
-				<data>CgsDAAAHBgADAAAABAAAAA==</data>
 				<key>Replace</key>
-				<data>DwsDAAAHBgADAAAABAAAAA==</data>
+				<data>
+				DwsDAAAHBgADAAAABAAAAA==
+				</data>
 			</dict>
 		</array>
 	</dict>
@@ -523,15 +619,15 @@
 			<array>
 				<dict>
 					<key>Frequency</key>
-					<string>2133</string>
+					<integer>2133</integer>
 					<key>Part</key>
 					<string>KHX2133C13S4/16G</string>
 					<key>Serial</key>
-					<string>6D338C50</string>
+					<string>6C338C51</string>
 					<key>Size</key>
-					<string>16384</string>
+					<integer>16384</integer>
 					<key>Slot</key>
-					<string>3</string>
+					<integer>1</integer>
 					<key>Type</key>
 					<string>DDR4</string>
 					<key>Vendor</key>
@@ -539,15 +635,15 @@
 				</dict>
 				<dict>
 					<key>Frequency</key>
-					<string>2133</string>
+					<integer>2133</integer>
 					<key>Part</key>
 					<string>KHX2133C13S4/16G</string>
 					<key>Serial</key>
-					<string>6C338C51</string>
+					<string>6D338C50</string>
 					<key>Size</key>
-					<string>16384</string>
+					<integer>16384</integer>
 					<key>Slot</key>
-					<string>1</string>
+					<integer>3</integer>
 					<key>Type</key>
 					<string>DDR4</string>
 					<key>Vendor</key>
