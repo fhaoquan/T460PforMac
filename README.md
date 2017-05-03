@@ -35,7 +35,6 @@ https://pan.baidu.com/s/1crh9Qu
 
 - 如果你有硬盘Clover，把你EFI里的Clover文件夹改名成bak，用我的Clover文件夹代替。
 - 如果你没有硬盘Clover，那就删除U盘EFI分区里面的Clover文件夹，用我的Clover文件夹代替。
-	- 不知道如何设置BIOS让U盘的Clover引导启动的话，参照我上一篇教程的BIOS设置部分。
 - 把我提供的MoreKext-LE复制到U盘安装系统的分区里（方便你安装系统后立刻可以访问）
 
 Clover Configurator.app
