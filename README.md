@@ -23,13 +23,13 @@
 
 - 如果你已有硬盘EFI分区的Clover，下载原版的DMG也可以
 - 我的百度云盘有一份比较旧版本不介意可以先用着
-- https://pan.baidu.com/s/1o7XMrSu
-- 或者10.12.3 https://pan.baidu.com/s/1bpD0prD
+- 链接: https://pan.baidu.com/s/1sljny9Z 密码: 2mf4
+- 或者10.12.3 链接: https://pan.baidu.com/s/1bWQM7s 密码: qy2m
 
 #### 2. 镜像写入U盘
 
 还是老伙计，`Transmac`
-https://pan.baidu.com/s/1crh9Qu
+链接: https://pan.baidu.com/s/1hrAZQHe 密码: 7kyq
 
 ，网上找个和谐版吧，写入U盘的过程我不说了，参考我上一篇教程，写入完毕后：
 
@@ -38,7 +38,7 @@ https://pan.baidu.com/s/1crh9Qu
 - 把我提供的MoreKext-LE复制到U盘安装系统的分区里（方便你安装系统后立刻可以访问）
 
 Clover Configurator.app
-https://pan.baidu.com/s/1crh9Qu
+链接: https://pan.baidu.com/s/1o8jt2aQ 密码: qer2
 
 #### 3. 安装系统
 
