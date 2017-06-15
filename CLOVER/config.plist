@@ -12,15 +12,9 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddHDMI_8000000</key>
-				<true/>
-				<key>AddPNLF_1000000</key>
-				<true/>
 				<key>NewWay_80000000</key>
 				<true/>
 			</dict>
-			<key>Name</key>
-			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -41,7 +35,7 @@
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					RUhDMQ==
@@ -55,7 +49,7 @@
 					<key>Comment</key>
 					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					RUhDMg==
@@ -129,15 +123,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>#MCFG</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -147,16 +133,16 @@
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
-			<false/>
-			<key>Generate</key>
 			<true/>
+			<key>Generate</key>
+			<false/>
 			<key>PluginType</key>
 			<integer>1</integer>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
+			<string>DSDT.aml</string>
 			<string>SSDT.aml</string>
-			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-0.aml</string>
 			<string>SSDT-1.aml</string>
 			<string>SSDT-2.aml</string>
@@ -177,6 +163,8 @@
 			<string>SSDT-17.aml</string>
 			<string>SSDT-18.aml</string>
 			<string>SSDT-19.aml</string>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-LPC.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -189,16 +177,12 @@
 		<string>Mac</string>
 		<key>Legacy</key>
 		<string>LegacyBiosDefault</string>
-		<key>NeverDoRecovery</key>
-		<true/>
-		<key>NoEarlyProgress</key>
-		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<integer>1</integer>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
