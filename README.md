@@ -1,15 +1,13 @@
 ## 前言
 
-升级到10.14版本，有需要的10.14 版本的黑苹果版本的同学可以下载试试。
+升级到10.15.4版本，有需要的10.15.4 版本的黑苹果版本的同学可以下载试试。
 
 > 这里讨论的配置是：美版thinkpad T460P i7 6820hq  系列
 > 如果是I5  请修改下面字段的值,clover config 可以修改,否则你的核显驱动不起来
 > 		<key>ig-platform-id</key>
-		<string>0x191B0000</string> 你也需要改成你对应的字段
+		<string>0x191b0000</string> 你也需要改成你对应的字段
 		<key>IntelGFX</key>	
-		<string>0x191B8086</string> 你也需要改成你对应的字段
-### 存在的问题：
-还没打好亮度调节补丁和外接屏幕.
+		<string>0x191b8086</string> 你也需要改成你对应的字段
 
 
 
@@ -17,8 +15,8 @@
 
 #### 1. 系统镜像
 
-这里提供一份可用的10.14 的系统
-链接:https://pan.baidu.com/s/1ysXfb0nhHKosacjGXANNNg  密码:ngac
+这里提供一份可用的10.15.4 的系统支持WEPE
+链接:https://pan.baidu.com/s/1p_KCB9lbpqWNxbiJOpLzPg  密码:0hxi
 
 #### 2. 镜像写入U盘
 
